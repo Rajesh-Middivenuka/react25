@@ -137,3 +137,5 @@ Supports Hot Module Replacement (HMR), meaning it updates components without a f
 Uses a highly efficient file-watching algorithm written in C++ for better performance.
 
 Provides faster builds using caching, reducing compilation time.
+
+npx parcel bulid index.html before executing this we should remove the "main": "app.js",
