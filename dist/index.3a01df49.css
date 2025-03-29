@@ -1,4 +1,79 @@
-#heading {
-  color: red;
+* {
+  box-sizing: border-box;
+}
+
+.image {
+  width: 100px;
+}
+
+.nav-items ul {
+  margin-right: 100px;
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-items ul li {
+  padding: 0 20px;
+}
+
+.header {
+  background-color: #add8e6;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.res-card {
+  box-sizing: border-box;
+  background-color: #d3d3d3;
+  width: 300px;
+  height: 400px;
+  margin: 5px;
+}
+
+.res-card:hover {
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+.res-logo {
+  width: 200px;
+  padding: 20px;
+}
+
+.res-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.filter {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+}
+
+.shimar-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shimar-card {
+  background-color: #faefef;
+  width: 250px;
+  height: 400px;
+  margin: 20px;
+}
+
+.loginBtn {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+}
+
+.filter {
+  display: flex;
 }
 /*# sourceMappingURL=index.3a01df49.css.map */

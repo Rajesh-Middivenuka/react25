@@ -2946,22 +2946,923 @@ $parcel$ReactRefreshHelpers$6024.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {
-    id: "heading"
-}, "hello worl from the react inside");
+let heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+    children: "rajesh reactjs"
+}, void 0, false, {
+    fileName: "app.js",
+    lineNumber: 3,
+    columnNumber: 13
+}, undefined);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(heading);
+const Heading = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "image-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "image",
+                    src: "https://1000logos.net/wp-content/uploads/2021/05/Swiggy-logo.png"
+                }, void 0, false, {
+                    fileName: "app.js",
+                    lineNumber: 9,
+                    columnNumber: 7
+                }, undefined)
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 8,
+                columnNumber: 6
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 13,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "About us"
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 14,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact us"
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 15,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "app.js",
+                            lineNumber: 16,
+                            columnNumber: 9
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "app.js",
+                    lineNumber: 12,
+                    columnNumber: 7
+                }, undefined)
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 11,
+                columnNumber: 6
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 7,
+        columnNumber: 3
+    }, undefined);
+};
+_c = Heading;
+const RestaurantCard = (props)=>{
+    const { name, costForTwo, cuisines, sla, cloudinaryImageId } = props.resCard.card.card.info;
+    //  console.log(sla)
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "res-card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: name
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 30,
+                columnNumber: 11
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "res-logo",
+                src: `https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 31,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: cuisines.join(",")
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 32,
+                columnNumber: 10
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: costForTwo
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 33,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: `${sla.deliveryTime} minutes`
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 34,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 29,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = RestaurantCard;
+const resCard = [
+    {
+        card: {
+            card: {
+                type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                info: {
+                    id: "839978",
+                    name: "Bong Bites",
+                    cloudinaryImageId: "FOOD_CATALOG/IMAGES/CMS/2024/11/8/bf2a329e-5a06-48df-a846-70fef8d8fe1f_a6aeeea2-7d1e-4dc9-93ba-87de20126bb3.jpeg",
+                    locality: "Nallurhalli",
+                    areaName: "Whitefield",
+                    costForTwo: "\u20B9200 for two",
+                    cuisines: [
+                        "Bengali",
+                        "Biryani"
+                    ],
+                    avgRating: 3.5,
+                    parentId: "231657",
+                    avgRatingString: "3.5",
+                    totalRatingsString: "42",
+                    promoted: true,
+                    adTrackingId: "cid=26646176~p=0~adgrpid=26646176#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=839978~eid=b497df33-4634-4be8-9b4c-f6bb72b749ce~srvts=1742533293107~collid=83639",
+                    sla: {
+                        deliveryTime: 47,
+                        lastMileTravel: 5,
+                        serviceability: "SERVICEABLE",
+                        slaString: "45-50 mins",
+                        lastMileTravelString: "5.0 km",
+                        iconType: "ICON_TYPE_EMPTY"
+                    },
+                    availability: {
+                        nextCloseTime: "2025-03-21 17:00:00",
+                        opened: true
+                    },
+                    badges: {},
+                    isOpen: true,
+                    type: "F",
+                    badgesV2: {
+                        entityBadges: {
+                            textBased: {},
+                            imageBased: {},
+                            textExtendedBadges: {}
+                        }
+                    },
+                    aggregatedDiscountInfoV3: {
+                        header: "15% OFF",
+                        subHeader: "UPTO \u20B980",
+                        logoCtx: {
+                            text: "BENEFITS"
+                        }
+                    },
+                    orderabilityCommunication: {
+                        title: {},
+                        subTitle: {},
+                        message: {},
+                        customIcon: {},
+                        commsStyling: {}
+                    },
+                    differentiatedUi: {
+                        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        differentiatedUiMediaDetails: {
+                            mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                            lottie: {},
+                            video: {}
+                        }
+                    },
+                    reviewsSummary: {},
+                    displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                    restaurantOfferPresentationInfo: {},
+                    externalRatings: {
+                        aggregatedRating: {
+                            rating: "--"
+                        }
+                    },
+                    ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                    campaignId: "26646176"
+                },
+                analytics: {},
+                cta: {
+                    link: "swiggy://menu?restaurant_id=839978&source=collection&query=Biryani",
+                    text: "RESTAURANT_MENU",
+                    type: "DEEPLINK"
+                },
+                widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            relevance: {
+                type: "RELEVANCE_TYPE_ON_MENU_RETURN",
+                sectionId: "MENU_RETURN_FOOD"
+            }
+        }
+    },
+    {
+        card: {
+            card: {
+                type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                info: {
+                    id: "210119",
+                    name: "Sri Jayadurga Biryani",
+                    cloudinaryImageId: "FOOD_CATALOG/IMAGES/CMS/2024/3/19/9a546f08-7535-48cb-9fe7-f6ac6bcca0cf_d0496385-b448-415c-9cda-27d5b9a4444f.jpeg",
+                    locality: "Munnekollal",
+                    areaName: "Kadubeesanahalli",
+                    costForTwo: "\u20B9300 for two",
+                    cuisines: [
+                        "Biryani",
+                        "South Indian",
+                        "Andhra",
+                        "Hyderabadi",
+                        "Snacks"
+                    ],
+                    avgRating: 3.8,
+                    parentId: "14529",
+                    avgRatingString: "3.8",
+                    totalRatingsString: "28K+",
+                    sla: {
+                        deliveryTime: 23,
+                        lastMileTravel: 1.2,
+                        serviceability: "SERVICEABLE",
+                        slaString: "20-25 mins",
+                        lastMileTravelString: "1.2 km",
+                        iconType: "ICON_TYPE_EMPTY"
+                    },
+                    availability: {
+                        nextCloseTime: "2025-03-22 00:00:00",
+                        opened: true
+                    },
+                    badges: {
+                        imageBadges: [
+                            {
+                                imageId: "bolt/bolt%206.png",
+                                description: "bolt!"
+                            }
+                        ]
+                    },
+                    isOpen: true,
+                    type: "F",
+                    badgesV2: {
+                        entityBadges: {
+                            imageBased: {
+                                badgeObject: [
+                                    {
+                                        attributes: {
+                                            imageId: "bolt/bolt%206.png",
+                                            description: "bolt!"
+                                        }
+                                    }
+                                ]
+                            },
+                            textExtendedBadges: {},
+                            textBased: {}
+                        }
+                    },
+                    aggregatedDiscountInfoV3: {
+                        header: "\u20B9150 OFF",
+                        subHeader: "ABOVE \u20B9249",
+                        discountTag: "FLAT DEAL",
+                        logoCtx: {
+                            text: "BENEFITS"
+                        }
+                    },
+                    orderabilityCommunication: {
+                        title: {},
+                        subTitle: {},
+                        message: {},
+                        customIcon: {},
+                        commsStyling: {}
+                    },
+                    differentiatedUi: {
+                        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        differentiatedUiMediaDetails: {
+                            mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                            lottie: {},
+                            video: {}
+                        }
+                    },
+                    reviewsSummary: {},
+                    displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                    restaurantOfferPresentationInfo: {},
+                    externalRatings: {
+                        aggregatedRating: {
+                            rating: "--"
+                        }
+                    },
+                    ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                },
+                analytics: {},
+                cta: {
+                    link: "swiggy://menu?restaurant_id=210119&source=collection&query=Biryani",
+                    text: "RESTAURANT_MENU",
+                    type: "DEEPLINK"
+                },
+                widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            relevance: {
+                type: "RELEVANCE_TYPE_ON_MENU_RETURN",
+                sectionId: "MENU_RETURN_FOOD"
+            }
+        }
+    },
+    {
+        card: {
+            card: {
+                type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                info: {
+                    id: "278162",
+                    name: "Dindigul Thalappakatti",
+                    cloudinaryImageId: "h4omlxjxqfdicbuhcpdy",
+                    locality: "Thubarahalli",
+                    areaName: "Whitefield",
+                    costForTwo: "\u20B9600 for two",
+                    cuisines: [
+                        "Biryani",
+                        "Barbecue",
+                        "South Indian",
+                        "Chinese",
+                        "North Indian"
+                    ],
+                    avgRating: 4.3,
+                    parentId: "332",
+                    avgRatingString: "4.3",
+                    totalRatingsString: "9.7K+",
+                    promoted: true,
+                    adTrackingId: "cid=26289607~p=1~adgrpid=26289607#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=278162~eid=e7dabc5d-c06d-4f0a-adb2-e4b12973a98c~srvts=1742533293107~collid=83639",
+                    sla: {
+                        deliveryTime: 29,
+                        lastMileTravel: 2.4,
+                        serviceability: "SERVICEABLE",
+                        slaString: "25-30 mins",
+                        lastMileTravelString: "2.4 km",
+                        iconType: "ICON_TYPE_EMPTY"
+                    },
+                    availability: {
+                        nextCloseTime: "2025-03-22 00:00:00",
+                        opened: true
+                    },
+                    badges: {},
+                    isOpen: true,
+                    type: "F",
+                    badgesV2: {
+                        entityBadges: {
+                            textBased: {},
+                            imageBased: {},
+                            textExtendedBadges: {}
+                        }
+                    },
+                    aggregatedDiscountInfoV3: {
+                        header: "ITEMS",
+                        subHeader: "AT \u20B9179",
+                        logoCtx: {
+                            text: "BENEFITS"
+                        }
+                    },
+                    orderabilityCommunication: {
+                        title: {},
+                        subTitle: {},
+                        message: {},
+                        customIcon: {},
+                        commsStyling: {}
+                    },
+                    differentiatedUi: {
+                        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        differentiatedUiMediaDetails: {
+                            mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                            lottie: {},
+                            video: {}
+                        }
+                    },
+                    reviewsSummary: {},
+                    displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                    restaurantOfferPresentationInfo: {},
+                    externalRatings: {
+                        aggregatedRating: {
+                            rating: "--"
+                        }
+                    },
+                    ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                    campaignId: "26289607"
+                },
+                analytics: {},
+                cta: {
+                    link: "swiggy://menu?restaurant_id=278162&source=collection&query=Biryani",
+                    text: "RESTAURANT_MENU",
+                    type: "DEEPLINK"
+                },
+                widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            relevance: {
+                type: "RELEVANCE_TYPE_ON_MENU_RETURN",
+                sectionId: "MENU_RETURN_FOOD"
+            }
+        }
+    },
+    {
+        card: {
+            card: {
+                type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                info: {
+                    id: "32474",
+                    name: "Thalassery Restaurant",
+                    cloudinaryImageId: "FOOD_CATALOG/IMAGES/CMS/2025/2/27/bfe82b80-ddab-480c-b405-1b236ca995a2_6e8a38a1-a5fe-4ba8-bc3a-24806a540eb4.jpg",
+                    locality: "Marathahalli",
+                    areaName: "Marathahalli",
+                    costForTwo: "\u20B9300 for two",
+                    cuisines: [
+                        "South Indian",
+                        "Biryani",
+                        "Kerala",
+                        "North Indian",
+                        "Chinese"
+                    ],
+                    avgRating: 4.2,
+                    parentId: "14391",
+                    avgRatingString: "4.2",
+                    totalRatingsString: "70K+",
+                    sla: {
+                        deliveryTime: 15,
+                        lastMileTravel: 1.3,
+                        serviceability: "SERVICEABLE",
+                        slaString: "10-15 mins",
+                        lastMileTravelString: "1.3 km",
+                        iconType: "ICON_TYPE_EMPTY"
+                    },
+                    availability: {
+                        nextCloseTime: "2025-03-21 23:25:00",
+                        opened: true
+                    },
+                    badges: {
+                        imageBadges: [
+                            {
+                                imageId: "bolt/bolt%206.png",
+                                description: "bolt!"
+                            }
+                        ]
+                    },
+                    isOpen: true,
+                    type: "F",
+                    badgesV2: {
+                        entityBadges: {
+                            textBased: {},
+                            imageBased: {
+                                badgeObject: [
+                                    {
+                                        attributes: {
+                                            description: "bolt!",
+                                            imageId: "bolt/bolt%206.png"
+                                        }
+                                    }
+                                ]
+                            },
+                            textExtendedBadges: {}
+                        }
+                    },
+                    aggregatedDiscountInfoV3: {
+                        header: "\u20B9100 OFF",
+                        subHeader: "ABOVE \u20B9199",
+                        discountTag: "FLAT DEAL",
+                        logoCtx: {
+                            text: "BENEFITS"
+                        }
+                    },
+                    orderabilityCommunication: {
+                        title: {},
+                        subTitle: {},
+                        message: {},
+                        customIcon: {},
+                        commsStyling: {}
+                    },
+                    differentiatedUi: {
+                        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        differentiatedUiMediaDetails: {
+                            mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                            lottie: {},
+                            video: {}
+                        }
+                    },
+                    reviewsSummary: {},
+                    displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                    restaurantOfferPresentationInfo: {},
+                    externalRatings: {
+                        aggregatedRating: {
+                            rating: "3.6",
+                            ratingCount: "6.2K+"
+                        },
+                        source: "GOOGLE",
+                        sourceIconImageId: "v1704440323/google_ratings/rating_google_tag"
+                    },
+                    ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                },
+                analytics: {},
+                cta: {
+                    link: "swiggy://menu?restaurant_id=32474&source=collection&query=Biryani",
+                    text: "RESTAURANT_MENU",
+                    type: "DEEPLINK"
+                },
+                widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            relevance: {
+                type: "RELEVANCE_TYPE_ON_MENU_RETURN",
+                sectionId: "MENU_RETURN_FOOD"
+            }
+        }
+    },
+    {
+        card: {
+            card: {
+                type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                info: {
+                    id: "392699",
+                    name: "Nandhana Palace",
+                    cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/21/395529a6-0759-432e-b44f-dd83cb6844b9_392699.jpg",
+                    locality: "Garudachar Palya",
+                    areaName: "Mahadevpura",
+                    costForTwo: "\u20B9600 for two",
+                    cuisines: [
+                        "Andhra",
+                        "Biryani",
+                        "Beverages",
+                        "Desserts",
+                        "Chinese"
+                    ],
+                    avgRating: 4.3,
+                    parentId: "2120",
+                    avgRatingString: "4.3",
+                    totalRatingsString: "15K+",
+                    promoted: true,
+                    adTrackingId: "cid=26728625~p=8~adgrpid=26728625#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=392699~eid=4e78ed3f-e67a-4740-b1f4-1b4bc4dab0e6~srvts=1742533293107~collid=83639",
+                    sla: {
+                        deliveryTime: 36,
+                        lastMileTravel: 5,
+                        serviceability: "SERVICEABLE",
+                        slaString: "35-40 mins",
+                        lastMileTravelString: "5.0 km",
+                        iconType: "ICON_TYPE_EMPTY"
+                    },
+                    availability: {
+                        nextCloseTime: "2025-03-22 02:00:00",
+                        opened: true
+                    },
+                    badges: {
+                        imageBadges: [
+                            {
+                                imageId: "Rxawards/_CATEGORY-Andhra.png",
+                                description: "Delivery!"
+                            }
+                        ]
+                    },
+                    isOpen: true,
+                    type: "F",
+                    badgesV2: {
+                        entityBadges: {
+                            textBased: {},
+                            imageBased: {
+                                badgeObject: [
+                                    {
+                                        attributes: {
+                                            imageId: "Rxawards/_CATEGORY-Andhra.png",
+                                            description: "Delivery!"
+                                        }
+                                    }
+                                ]
+                            },
+                            textExtendedBadges: {}
+                        }
+                    },
+                    aggregatedDiscountInfoV3: {
+                        header: "\u20B950 OFF",
+                        subHeader: "ABOVE \u20B9199",
+                        discountTag: "FLAT DEAL",
+                        logoCtx: {
+                            text: "BENEFITS"
+                        }
+                    },
+                    orderabilityCommunication: {
+                        title: {},
+                        subTitle: {},
+                        message: {},
+                        customIcon: {},
+                        commsStyling: {}
+                    },
+                    differentiatedUi: {
+                        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        differentiatedUiMediaDetails: {
+                            mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                            lottie: {},
+                            video: {}
+                        }
+                    },
+                    reviewsSummary: {},
+                    displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                    restaurantOfferPresentationInfo: {},
+                    externalRatings: {
+                        aggregatedRating: {
+                            rating: "--"
+                        }
+                    },
+                    ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                    campaignId: "26728625"
+                },
+                analytics: {},
+                cta: {
+                    link: "swiggy://menu?restaurant_id=392699&source=collection&query=Biryani",
+                    text: "RESTAURANT_MENU",
+                    type: "DEEPLINK"
+                },
+                widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            relevance: {
+                type: "RELEVANCE_TYPE_ON_MENU_RETURN",
+                sectionId: "MENU_RETURN_FOOD"
+            }
+        }
+    },
+    {
+        card: {
+            card: {
+                type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                info: {
+                    id: "420659",
+                    name: "Sri Lakshmi Biryani",
+                    cloudinaryImageId: "FOOD_CATALOG/IMAGES/CMS/2024/3/19/9a546f08-7535-48cb-9fe7-f6ac6bcca0cf_d0496385-b448-415c-9cda-27d5b9a4444f.jpeg",
+                    locality: "Manunatha Layout",
+                    areaName: "Marathahalli",
+                    costForTwo: "\u20B9200 for two",
+                    cuisines: [
+                        "Biryani",
+                        "North Indian",
+                        "Snacks"
+                    ],
+                    avgRating: 3.7,
+                    parentId: "193940",
+                    avgRatingString: "3.7",
+                    totalRatingsString: "10K+",
+                    sla: {
+                        deliveryTime: 23,
+                        lastMileTravel: 1.2,
+                        serviceability: "SERVICEABLE",
+                        slaString: "20-25 mins",
+                        lastMileTravelString: "1.2 km",
+                        iconType: "ICON_TYPE_EMPTY"
+                    },
+                    availability: {
+                        nextCloseTime: "2025-03-22 00:00:00",
+                        opened: true
+                    },
+                    badges: {
+                        imageBadges: [
+                            {
+                                imageId: "bolt/bolt%206.png",
+                                description: "bolt!"
+                            }
+                        ]
+                    },
+                    isOpen: true,
+                    type: "F",
+                    badgesV2: {
+                        entityBadges: {
+                            textExtendedBadges: {},
+                            textBased: {},
+                            imageBased: {
+                                badgeObject: [
+                                    {
+                                        attributes: {
+                                            description: "bolt!",
+                                            imageId: "bolt/bolt%206.png"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    aggregatedDiscountInfoV3: {
+                        header: "\u20B9150 OFF",
+                        subHeader: "ABOVE \u20B9249",
+                        discountTag: "FLAT DEAL",
+                        logoCtx: {
+                            text: "BENEFITS"
+                        }
+                    },
+                    orderabilityCommunication: {
+                        title: {},
+                        subTitle: {},
+                        message: {},
+                        customIcon: {},
+                        commsStyling: {}
+                    },
+                    differentiatedUi: {
+                        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        differentiatedUiMediaDetails: {
+                            mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                            lottie: {},
+                            video: {}
+                        }
+                    },
+                    reviewsSummary: {},
+                    displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                    restaurantOfferPresentationInfo: {},
+                    externalRatings: {
+                        aggregatedRating: {
+                            rating: "--"
+                        }
+                    },
+                    ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                },
+                analytics: {},
+                cta: {
+                    link: "swiggy://menu?restaurant_id=420659&source=collection&query=Biryani",
+                    text: "RESTAURANT_MENU",
+                    type: "DEEPLINK"
+                },
+                widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            relevance: {
+                type: "RELEVANCE_TYPE_ON_MENU_RETURN",
+                sectionId: "MENU_RETURN_FOOD"
+            }
+        }
+    },
+    {
+        card: {
+            card: {
+                type: "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                info: {
+                    id: "690129",
+                    name: "Kritunga",
+                    cloudinaryImageId: "FOOD_CATALOG/IMAGES/CMS/2024/12/24/66792ab7-5348-4213-8e47-9d662e91d018_c33eb18b-c2a1-4ed5-b6ca-b29e7eaa56de.png",
+                    locality: "Whitefield",
+                    areaName: "Whitefield",
+                    costForTwo: "\u20B9600 for two",
+                    cuisines: [
+                        "Indian"
+                    ],
+                    avgRating: 3.8,
+                    parentId: "572",
+                    avgRatingString: "3.8",
+                    totalRatingsString: "4.3K+",
+                    promoted: true,
+                    adTrackingId: "cid=26721620~p=9~adgrpid=26721620#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=690129~eid=c9b81e01-226d-4522-bca0-208b7ad1daee~srvts=1742533293107~collid=83639",
+                    sla: {
+                        deliveryTime: 54,
+                        lastMileTravel: 5,
+                        serviceability: "SERVICEABLE",
+                        slaString: "50-55 mins",
+                        lastMileTravelString: "5.0 km",
+                        iconType: "ICON_TYPE_EMPTY"
+                    },
+                    availability: {
+                        nextCloseTime: "2025-03-21 19:00:00",
+                        opened: true
+                    },
+                    badges: {},
+                    isOpen: true,
+                    type: "F",
+                    badgesV2: {
+                        entityBadges: {
+                            textBased: {},
+                            imageBased: {},
+                            textExtendedBadges: {}
+                        }
+                    },
+                    aggregatedDiscountInfoV3: {
+                        header: "30% OFF",
+                        subHeader: "UPTO \u20B975",
+                        logoCtx: {
+                            text: "BENEFITS"
+                        }
+                    },
+                    orderabilityCommunication: {
+                        title: {},
+                        subTitle: {},
+                        message: {},
+                        customIcon: {},
+                        commsStyling: {}
+                    },
+                    differentiatedUi: {
+                        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        differentiatedUiMediaDetails: {
+                            mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                            lottie: {},
+                            video: {}
+                        }
+                    },
+                    reviewsSummary: {},
+                    displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                    restaurantOfferPresentationInfo: {},
+                    externalRatings: {
+                        aggregatedRating: {
+                            rating: "3.7",
+                            ratingCount: "6.1K+"
+                        },
+                        source: "GOOGLE",
+                        sourceIconImageId: "v1704440323/google_ratings/rating_google_tag"
+                    },
+                    ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                    campaignId: "26721620"
+                },
+                analytics: {},
+                cta: {
+                    link: "swiggy://menu?restaurant_id=690129&source=collection&query=Biryani",
+                    text: "RESTAURANT_MENU",
+                    type: "DEEPLINK"
+                },
+                widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            relevance: {
+                type: "RELEVANCE_TYPE_ON_MENU_RETURN",
+                sectionId: "MENU_RETURN_FOOD"
+            }
+        }
+    }
+];
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search",
+                children: "Search"
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 752,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "res-container",
+                children: resCard.map((val, index)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                        resCard: val
+                    }, val.card.card.info.id, false, {
+                        fileName: "app.js",
+                        lineNumber: 757,
+                        columnNumber: 20
+                    }, undefined);
+                })
+            }, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 753,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 751,
+        columnNumber: 5
+    }, undefined);
+};
+_c2 = Body;
+const AppLayout = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "app",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Heading, {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 768,
+                columnNumber: 6
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 769,
+                columnNumber: 6
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "app.js",
+        lineNumber: 767,
+        columnNumber: 5
+    }, undefined);
+};
+_c3 = AppLayout;
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
+    fileName: "app.js",
+    lineNumber: 773,
+    columnNumber: 15
+}, undefined));
+var _c, _c1, _c2, _c3;
+$RefreshReg$(_c, "Heading");
+$RefreshReg$(_c1, "RestaurantCard");
+$RefreshReg$(_c2, "Body");
+$RefreshReg$(_c3, "AppLayout");
 
   $parcel$ReactRefreshHelpers$6024.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-dom/client":"lOjBx"}],"21dqq":[function(require,module,exports,__globalThis) {
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-dom/client":"lOjBx","react/jsx-dev-runtime":"iTorj"}],"21dqq":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("a569817e6ea559f6");
 
@@ -18327,6 +19228,410 @@ module.exports = require("b0f0e6b9e8349dac");
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{"6f0162e9ab224cd4":"21dqq"}]},["aQL8O","eCF1U","igcvL"], "igcvL", "parcelRequire94c2")
+},{"6f0162e9ab224cd4":"21dqq"}],"iTorj":[function(require,module,exports,__globalThis) {
+'use strict';
+module.exports = require("ee51401569654d91");
+
+},{"ee51401569654d91":"48uCM"}],"48uCM":[function(require,module,exports,__globalThis) {
+/**
+ * @license React
+ * react-jsx-dev-runtime.development.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    function getComponentNameFromType(type) {
+        if (null == type) return null;
+        if ("function" === typeof type) return type.$$typeof === REACT_CLIENT_REFERENCE$2 ? null : type.displayName || type.name || null;
+        if ("string" === typeof type) return type;
+        switch(type){
+            case REACT_FRAGMENT_TYPE:
+                return "Fragment";
+            case REACT_PORTAL_TYPE:
+                return "Portal";
+            case REACT_PROFILER_TYPE:
+                return "Profiler";
+            case REACT_STRICT_MODE_TYPE:
+                return "StrictMode";
+            case REACT_SUSPENSE_TYPE:
+                return "Suspense";
+            case REACT_SUSPENSE_LIST_TYPE:
+                return "SuspenseList";
+        }
+        if ("object" === typeof type) switch("number" === typeof type.tag && console.error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), type.$$typeof){
+            case REACT_CONTEXT_TYPE:
+                return (type.displayName || "Context") + ".Provider";
+            case REACT_CONSUMER_TYPE:
+                return (type._context.displayName || "Context") + ".Consumer";
+            case REACT_FORWARD_REF_TYPE:
+                var innerType = type.render;
+                type = type.displayName;
+                type || (type = innerType.displayName || innerType.name || "", type = "" !== type ? "ForwardRef(" + type + ")" : "ForwardRef");
+                return type;
+            case REACT_MEMO_TYPE:
+                return innerType = type.displayName || null, null !== innerType ? innerType : getComponentNameFromType(type.type) || "Memo";
+            case REACT_LAZY_TYPE:
+                innerType = type._payload;
+                type = type._init;
+                try {
+                    return getComponentNameFromType(type(innerType));
+                } catch (x) {}
+        }
+        return null;
+    }
+    function testStringCoercion(value) {
+        return "" + value;
+    }
+    function checkKeyStringCoercion(value) {
+        try {
+            testStringCoercion(value);
+            var JSCompiler_inline_result = !1;
+        } catch (e) {
+            JSCompiler_inline_result = !0;
+        }
+        if (JSCompiler_inline_result) {
+            JSCompiler_inline_result = console;
+            var JSCompiler_temp_const = JSCompiler_inline_result.error;
+            var JSCompiler_inline_result$jscomp$0 = "function" === typeof Symbol && Symbol.toStringTag && value[Symbol.toStringTag] || value.constructor.name || "Object";
+            JSCompiler_temp_const.call(JSCompiler_inline_result, "The provided key is an unsupported type %s. This value must be coerced to a string before using it here.", JSCompiler_inline_result$jscomp$0);
+            return testStringCoercion(value);
+        }
+    }
+    function disabledLog() {}
+    function disableLogs() {
+        if (0 === disabledDepth) {
+            prevLog = console.log;
+            prevInfo = console.info;
+            prevWarn = console.warn;
+            prevError = console.error;
+            prevGroup = console.group;
+            prevGroupCollapsed = console.groupCollapsed;
+            prevGroupEnd = console.groupEnd;
+            var props = {
+                configurable: !0,
+                enumerable: !0,
+                value: disabledLog,
+                writable: !0
+            };
+            Object.defineProperties(console, {
+                info: props,
+                log: props,
+                warn: props,
+                error: props,
+                group: props,
+                groupCollapsed: props,
+                groupEnd: props
+            });
+        }
+        disabledDepth++;
+    }
+    function reenableLogs() {
+        disabledDepth--;
+        if (0 === disabledDepth) {
+            var props = {
+                configurable: !0,
+                enumerable: !0,
+                writable: !0
+            };
+            Object.defineProperties(console, {
+                log: assign({}, props, {
+                    value: prevLog
+                }),
+                info: assign({}, props, {
+                    value: prevInfo
+                }),
+                warn: assign({}, props, {
+                    value: prevWarn
+                }),
+                error: assign({}, props, {
+                    value: prevError
+                }),
+                group: assign({}, props, {
+                    value: prevGroup
+                }),
+                groupCollapsed: assign({}, props, {
+                    value: prevGroupCollapsed
+                }),
+                groupEnd: assign({}, props, {
+                    value: prevGroupEnd
+                })
+            });
+        }
+        0 > disabledDepth && console.error("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+    }
+    function describeBuiltInComponentFrame(name) {
+        if (void 0 === prefix) try {
+            throw Error();
+        } catch (x) {
+            var match = x.stack.trim().match(/\n( *(at )?)/);
+            prefix = match && match[1] || "";
+            suffix = -1 < x.stack.indexOf("\n    at") ? " (<anonymous>)" : -1 < x.stack.indexOf("@") ? "@unknown:0:0" : "";
+        }
+        return "\n" + prefix + name + suffix;
+    }
+    function describeNativeComponentFrame(fn, construct) {
+        if (!fn || reentry) return "";
+        var frame = componentFrameCache.get(fn);
+        if (void 0 !== frame) return frame;
+        reentry = !0;
+        frame = Error.prepareStackTrace;
+        Error.prepareStackTrace = void 0;
+        var previousDispatcher = null;
+        previousDispatcher = ReactSharedInternals.H;
+        ReactSharedInternals.H = null;
+        disableLogs();
+        try {
+            var RunInRootFrame = {
+                DetermineComponentFrameRoot: function() {
+                    try {
+                        if (construct) {
+                            var Fake = function() {
+                                throw Error();
+                            };
+                            Object.defineProperty(Fake.prototype, "props", {
+                                set: function() {
+                                    throw Error();
+                                }
+                            });
+                            if ("object" === typeof Reflect && Reflect.construct) {
+                                try {
+                                    Reflect.construct(Fake, []);
+                                } catch (x) {
+                                    var control = x;
+                                }
+                                Reflect.construct(fn, [], Fake);
+                            } else {
+                                try {
+                                    Fake.call();
+                                } catch (x$0) {
+                                    control = x$0;
+                                }
+                                fn.call(Fake.prototype);
+                            }
+                        } else {
+                            try {
+                                throw Error();
+                            } catch (x$1) {
+                                control = x$1;
+                            }
+                            (Fake = fn()) && "function" === typeof Fake.catch && Fake.catch(function() {});
+                        }
+                    } catch (sample) {
+                        if (sample && control && "string" === typeof sample.stack) return [
+                            sample.stack,
+                            control.stack
+                        ];
+                    }
+                    return [
+                        null,
+                        null
+                    ];
+                }
+            };
+            RunInRootFrame.DetermineComponentFrameRoot.displayName = "DetermineComponentFrameRoot";
+            var namePropDescriptor = Object.getOwnPropertyDescriptor(RunInRootFrame.DetermineComponentFrameRoot, "name");
+            namePropDescriptor && namePropDescriptor.configurable && Object.defineProperty(RunInRootFrame.DetermineComponentFrameRoot, "name", {
+                value: "DetermineComponentFrameRoot"
+            });
+            var _RunInRootFrame$Deter = RunInRootFrame.DetermineComponentFrameRoot(), sampleStack = _RunInRootFrame$Deter[0], controlStack = _RunInRootFrame$Deter[1];
+            if (sampleStack && controlStack) {
+                var sampleLines = sampleStack.split("\n"), controlLines = controlStack.split("\n");
+                for(_RunInRootFrame$Deter = namePropDescriptor = 0; namePropDescriptor < sampleLines.length && !sampleLines[namePropDescriptor].includes("DetermineComponentFrameRoot");)namePropDescriptor++;
+                for(; _RunInRootFrame$Deter < controlLines.length && !controlLines[_RunInRootFrame$Deter].includes("DetermineComponentFrameRoot");)_RunInRootFrame$Deter++;
+                if (namePropDescriptor === sampleLines.length || _RunInRootFrame$Deter === controlLines.length) for(namePropDescriptor = sampleLines.length - 1, _RunInRootFrame$Deter = controlLines.length - 1; 1 <= namePropDescriptor && 0 <= _RunInRootFrame$Deter && sampleLines[namePropDescriptor] !== controlLines[_RunInRootFrame$Deter];)_RunInRootFrame$Deter--;
+                for(; 1 <= namePropDescriptor && 0 <= _RunInRootFrame$Deter; namePropDescriptor--, _RunInRootFrame$Deter--)if (sampleLines[namePropDescriptor] !== controlLines[_RunInRootFrame$Deter]) {
+                    if (1 !== namePropDescriptor || 1 !== _RunInRootFrame$Deter) {
+                        do if (namePropDescriptor--, _RunInRootFrame$Deter--, 0 > _RunInRootFrame$Deter || sampleLines[namePropDescriptor] !== controlLines[_RunInRootFrame$Deter]) {
+                            var _frame = "\n" + sampleLines[namePropDescriptor].replace(" at new ", " at ");
+                            fn.displayName && _frame.includes("<anonymous>") && (_frame = _frame.replace("<anonymous>", fn.displayName));
+                            "function" === typeof fn && componentFrameCache.set(fn, _frame);
+                            return _frame;
+                        }
+                        while (1 <= namePropDescriptor && 0 <= _RunInRootFrame$Deter);
+                    }
+                    break;
+                }
+            }
+        } finally{
+            reentry = !1, ReactSharedInternals.H = previousDispatcher, reenableLogs(), Error.prepareStackTrace = frame;
+        }
+        sampleLines = (sampleLines = fn ? fn.displayName || fn.name : "") ? describeBuiltInComponentFrame(sampleLines) : "";
+        "function" === typeof fn && componentFrameCache.set(fn, sampleLines);
+        return sampleLines;
+    }
+    function describeUnknownElementTypeFrameInDEV(type) {
+        if (null == type) return "";
+        if ("function" === typeof type) {
+            var prototype = type.prototype;
+            return describeNativeComponentFrame(type, !(!prototype || !prototype.isReactComponent));
+        }
+        if ("string" === typeof type) return describeBuiltInComponentFrame(type);
+        switch(type){
+            case REACT_SUSPENSE_TYPE:
+                return describeBuiltInComponentFrame("Suspense");
+            case REACT_SUSPENSE_LIST_TYPE:
+                return describeBuiltInComponentFrame("SuspenseList");
+        }
+        if ("object" === typeof type) switch(type.$$typeof){
+            case REACT_FORWARD_REF_TYPE:
+                return type = describeNativeComponentFrame(type.render, !1), type;
+            case REACT_MEMO_TYPE:
+                return describeUnknownElementTypeFrameInDEV(type.type);
+            case REACT_LAZY_TYPE:
+                prototype = type._payload;
+                type = type._init;
+                try {
+                    return describeUnknownElementTypeFrameInDEV(type(prototype));
+                } catch (x) {}
+        }
+        return "";
+    }
+    function getOwner() {
+        var dispatcher = ReactSharedInternals.A;
+        return null === dispatcher ? null : dispatcher.getOwner();
+    }
+    function hasValidKey(config) {
+        if (hasOwnProperty.call(config, "key")) {
+            var getter = Object.getOwnPropertyDescriptor(config, "key").get;
+            if (getter && getter.isReactWarning) return !1;
+        }
+        return void 0 !== config.key;
+    }
+    function defineKeyPropWarningGetter(props, displayName) {
+        function warnAboutAccessingKey() {
+            specialPropKeyWarningShown || (specialPropKeyWarningShown = !0, console.error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)", displayName));
+        }
+        warnAboutAccessingKey.isReactWarning = !0;
+        Object.defineProperty(props, "key", {
+            get: warnAboutAccessingKey,
+            configurable: !0
+        });
+    }
+    function elementRefGetterWithDeprecationWarning() {
+        var componentName = getComponentNameFromType(this.type);
+        didWarnAboutElementRef[componentName] || (didWarnAboutElementRef[componentName] = !0, console.error("Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."));
+        componentName = this.props.ref;
+        return void 0 !== componentName ? componentName : null;
+    }
+    function ReactElement(type, key, self, source, owner, props) {
+        self = props.ref;
+        type = {
+            $$typeof: REACT_ELEMENT_TYPE,
+            type: type,
+            key: key,
+            props: props,
+            _owner: owner
+        };
+        null !== (void 0 !== self ? self : null) ? Object.defineProperty(type, "ref", {
+            enumerable: !1,
+            get: elementRefGetterWithDeprecationWarning
+        }) : Object.defineProperty(type, "ref", {
+            enumerable: !1,
+            value: null
+        });
+        type._store = {};
+        Object.defineProperty(type._store, "validated", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: 0
+        });
+        Object.defineProperty(type, "_debugInfo", {
+            configurable: !1,
+            enumerable: !1,
+            writable: !0,
+            value: null
+        });
+        Object.freeze && (Object.freeze(type.props), Object.freeze(type));
+        return type;
+    }
+    function jsxDEVImpl(type, config, maybeKey, isStaticChildren, source, self) {
+        if ("string" === typeof type || "function" === typeof type || type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_OFFSCREEN_TYPE || "object" === typeof type && null !== type && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_CONSUMER_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_CLIENT_REFERENCE$1 || void 0 !== type.getModuleId)) {
+            var children = config.children;
+            if (void 0 !== children) {
+                if (isStaticChildren) {
+                    if (isArrayImpl(children)) {
+                        for(isStaticChildren = 0; isStaticChildren < children.length; isStaticChildren++)validateChildKeys(children[isStaticChildren], type);
+                        Object.freeze && Object.freeze(children);
+                    } else console.error("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                } else validateChildKeys(children, type);
+            }
+        } else {
+            children = "";
+            if (void 0 === type || "object" === typeof type && null !== type && 0 === Object.keys(type).length) children += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.";
+            null === type ? isStaticChildren = "null" : isArrayImpl(type) ? isStaticChildren = "array" : void 0 !== type && type.$$typeof === REACT_ELEMENT_TYPE ? (isStaticChildren = "<" + (getComponentNameFromType(type.type) || "Unknown") + " />", children = " Did you accidentally export a JSX literal instead of a component?") : isStaticChildren = typeof type;
+            console.error("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", isStaticChildren, children);
+        }
+        if (hasOwnProperty.call(config, "key")) {
+            children = getComponentNameFromType(type);
+            var keys = Object.keys(config).filter(function(k) {
+                return "key" !== k;
+            });
+            isStaticChildren = 0 < keys.length ? "{key: someKey, " + keys.join(": ..., ") + ": ...}" : "{key: someKey}";
+            didWarnAboutKeySpread[children + isStaticChildren] || (keys = 0 < keys.length ? "{" + keys.join(": ..., ") + ": ...}" : "{}", console.error('A props object containing a "key" prop is being spread into JSX:\n  let props = %s;\n  <%s {...props} />\nReact keys must be passed directly to JSX without using spread:\n  let props = %s;\n  <%s key={someKey} {...props} />', isStaticChildren, children, keys, children), didWarnAboutKeySpread[children + isStaticChildren] = !0);
+        }
+        children = null;
+        void 0 !== maybeKey && (checkKeyStringCoercion(maybeKey), children = "" + maybeKey);
+        hasValidKey(config) && (checkKeyStringCoercion(config.key), children = "" + config.key);
+        if ("key" in config) {
+            maybeKey = {};
+            for(var propName in config)"key" !== propName && (maybeKey[propName] = config[propName]);
+        } else maybeKey = config;
+        children && defineKeyPropWarningGetter(maybeKey, "function" === typeof type ? type.displayName || type.name || "Unknown" : type);
+        return ReactElement(type, children, self, source, getOwner(), maybeKey);
+    }
+    function validateChildKeys(node, parentType) {
+        if ("object" === typeof node && node && node.$$typeof !== REACT_CLIENT_REFERENCE) {
+            if (isArrayImpl(node)) for(var i = 0; i < node.length; i++){
+                var child = node[i];
+                isValidElement(child) && validateExplicitKey(child, parentType);
+            }
+            else if (isValidElement(node)) node._store && (node._store.validated = 1);
+            else if (null === node || "object" !== typeof node ? i = null : (i = MAYBE_ITERATOR_SYMBOL && node[MAYBE_ITERATOR_SYMBOL] || node["@@iterator"], i = "function" === typeof i ? i : null), "function" === typeof i && i !== node.entries && (i = i.call(node), i !== node)) for(; !(node = i.next()).done;)isValidElement(node.value) && validateExplicitKey(node.value, parentType);
+        }
+    }
+    function isValidElement(object) {
+        return "object" === typeof object && null !== object && object.$$typeof === REACT_ELEMENT_TYPE;
+    }
+    function validateExplicitKey(element, parentType) {
+        if (element._store && !element._store.validated && null == element.key && (element._store.validated = 1, parentType = getCurrentComponentErrorInfo(parentType), !ownerHasKeyUseWarning[parentType])) {
+            ownerHasKeyUseWarning[parentType] = !0;
+            var childOwner = "";
+            element && null != element._owner && element._owner !== getOwner() && (childOwner = null, "number" === typeof element._owner.tag ? childOwner = getComponentNameFromType(element._owner.type) : "string" === typeof element._owner.name && (childOwner = element._owner.name), childOwner = " It was passed a child from " + childOwner + ".");
+            var prevGetCurrentStack = ReactSharedInternals.getCurrentStack;
+            ReactSharedInternals.getCurrentStack = function() {
+                var stack = describeUnknownElementTypeFrameInDEV(element.type);
+                prevGetCurrentStack && (stack += prevGetCurrentStack() || "");
+                return stack;
+            };
+            console.error('Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information.', parentType, childOwner);
+            ReactSharedInternals.getCurrentStack = prevGetCurrentStack;
+        }
+    }
+    function getCurrentComponentErrorInfo(parentType) {
+        var info = "", owner = getOwner();
+        owner && (owner = getComponentNameFromType(owner.type)) && (info = "\n\nCheck the render method of `" + owner + "`.");
+        info || (parentType = getComponentNameFromType(parentType)) && (info = "\n\nCheck the top-level render call using <" + parentType + ">.");
+        return info;
+    }
+    var React = require("58362d9d82be395f"), REACT_ELEMENT_TYPE = Symbol.for("react.transitional.element"), REACT_PORTAL_TYPE = Symbol.for("react.portal"), REACT_FRAGMENT_TYPE = Symbol.for("react.fragment"), REACT_STRICT_MODE_TYPE = Symbol.for("react.strict_mode"), REACT_PROFILER_TYPE = Symbol.for("react.profiler");
+    Symbol.for("react.provider");
+    var REACT_CONSUMER_TYPE = Symbol.for("react.consumer"), REACT_CONTEXT_TYPE = Symbol.for("react.context"), REACT_FORWARD_REF_TYPE = Symbol.for("react.forward_ref"), REACT_SUSPENSE_TYPE = Symbol.for("react.suspense"), REACT_SUSPENSE_LIST_TYPE = Symbol.for("react.suspense_list"), REACT_MEMO_TYPE = Symbol.for("react.memo"), REACT_LAZY_TYPE = Symbol.for("react.lazy"), REACT_OFFSCREEN_TYPE = Symbol.for("react.offscreen"), MAYBE_ITERATOR_SYMBOL = Symbol.iterator, REACT_CLIENT_REFERENCE$2 = Symbol.for("react.client.reference"), ReactSharedInternals = React.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, hasOwnProperty = Object.prototype.hasOwnProperty, assign = Object.assign, REACT_CLIENT_REFERENCE$1 = Symbol.for("react.client.reference"), isArrayImpl = Array.isArray, disabledDepth = 0, prevLog, prevInfo, prevWarn, prevError, prevGroup, prevGroupCollapsed, prevGroupEnd;
+    disabledLog.__reactDisabledLog = !0;
+    var prefix, suffix, reentry = !1;
+    var componentFrameCache = new ("function" === typeof WeakMap ? WeakMap : Map)();
+    var REACT_CLIENT_REFERENCE = Symbol.for("react.client.reference"), specialPropKeyWarningShown;
+    var didWarnAboutElementRef = {};
+    var didWarnAboutKeySpread = {}, ownerHasKeyUseWarning = {};
+    exports.Fragment = REACT_FRAGMENT_TYPE;
+    exports.jsxDEV = function(type, config, maybeKey, isStaticChildren, source, self) {
+        return jsxDEVImpl(type, config, maybeKey, isStaticChildren, source, self);
+    };
+})();
+
+},{"58362d9d82be395f":"21dqq"}]},["aQL8O","eCF1U","igcvL"], "igcvL", "parcelRequire94c2")
 
 //# sourceMappingURL=index.5baa4167.js.map
