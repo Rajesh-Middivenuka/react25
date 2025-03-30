@@ -1,10 +1,12 @@
 import RestaurantCard from "./RestaurantCard";
-import { useState, useEffect } from "react";
+import { useState, useEffect ,useContext} from "react";
 import Simmer from "./Simmer";
 import { Link } from "react-router";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { withPromotedLabel } from "./RestaurantCard";
+import UserContext from "../utils/UserContext";
 const Body = () => {
+  const{loggedInUser,setUserName}=useContext(UserContext)
   const [listOfResto, setlistOfResto] = useState([]);
   const [searchText, setsearchText] = useState("");
   const [filterlistofResto, setfilterlistofResto] = useState([]);
@@ -91,6 +93,11 @@ const Body = () => {
           >
             Top rated Restaurants
           </button>
+
+        </div>
+        <div className="searchBox m-4 p-4">
+          <label>UserName</label>
+          <input className="border border-black p-2" value={loggedInUser} onChange={(e)=>setUserName(e.target.value)}></input>
         </div>
       </div>
       <div className="res-container flex flex-wrap content-center">

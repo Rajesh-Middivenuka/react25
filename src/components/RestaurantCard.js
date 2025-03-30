@@ -1,5 +1,8 @@
 import { CDN_URL } from "../utils/constants";
+import UserContext from "../utils/UserContext";
+import { useContext } from "react";
 const RestaurantCard = (props) => {
+  let {loggedInUser}=useContext(UserContext)
   const { name, cloudinaryImageId, cuisines, costForTwo, sla } =
     props.resCard.info;
 
@@ -13,6 +16,7 @@ const RestaurantCard = (props) => {
       <h4>{cuisines.join(",")}</h4>
       <h4>{costForTwo}</h4>
       <h4>{`${sla.deliveryTime} minutes`}</h4>
+      <h4>{loggedInUser}</h4>
     </div>
   );
 };

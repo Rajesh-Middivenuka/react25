@@ -9,12 +9,28 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 import Error from "./components/Error.js";
 import Restromenupage from "./components/Restromenupage.js";
+import { useState,useEffect } from "react";
+import UserContext from "./utils/UserContext.js";
 const AppLayout = () => {
+  const[userName,setUserName]=useState();
+  useEffect(()=>{
+     const data={
+      name:"rajesh reddy"
+     }
+     setUserName(data.name)
+  },[])
   return (
+    <UserContext.Provider value={{loggedInUser:userName,setUserName}}>
     <div className="app">
+       
+
       <Heading />
+     
       <Outlet />
+      
     </div>
+    </UserContext.Provider>
+    
   );
 };
 const appRouter = createBrowserRouter([

@@ -1,12 +1,11 @@
 import ListOfItems from "./ListOfItems";
 import React from "react";
 import { useState } from "react";
-const RestaurantCategory = ({ cardData }) => {
-  console.log(cardData);
-  const [showItems, setshowItems] = useState(false);
+const RestaurantCategory = ({ cardData,showItems,setShowIndex }) => {
+  
 
   const handleClick = () => {
-    setshowItems(!showItems);
+    setShowIndex()
   };
   return (
     <div>
@@ -24,7 +23,7 @@ const RestaurantCategory = ({ cardData }) => {
           <ListOfItems
             key={cardData.itemCards.length}
             items={cardData.itemCards}
-            showItems={false}
+          
           />
         )}
       </div>
