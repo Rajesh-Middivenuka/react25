@@ -11,6 +11,9 @@ import Error from "./components/Error.js";
 import Restromenupage from "./components/Restromenupage.js";
 import { useState,useEffect } from "react";
 import UserContext from "./utils/UserContext.js";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore.js";
+import Cart from "./components/Cart.js";
 const AppLayout = () => {
   const[userName,setUserName]=useState();
   useEffect(()=>{
@@ -20,6 +23,7 @@ const AppLayout = () => {
      setUserName(data.name)
   },[])
   return (
+    <Provider store={appStore}>
     <UserContext.Provider value={{loggedInUser:userName,setUserName}}>
     <div className="app">
        
@@ -30,7 +34,7 @@ const AppLayout = () => {
       
     </div>
     </UserContext.Provider>
-    
+    </Provider>
   );
 };
 const appRouter = createBrowserRouter([
@@ -55,6 +59,10 @@ const appRouter = createBrowserRouter([
         path: "/restromenu/:resId",
         element: <Restromenupage />,
       },
+      {
+        path:"/cart",
+        element:<Cart/>
+      }
     ],
   },
 ]);

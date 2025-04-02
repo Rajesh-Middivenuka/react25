@@ -32,7 +32,7 @@ const Restromenupage = () => {
       <h1 className="font-bold my-8 text-2xl">{name}</h1>
       <p className="font-bold text-lg">{cuisines}</p>
       {cata.map((data, index) => (
-        <RestaurantCategory key={id} cardData={data?.card?.card } showItems={index===showIndex? true:false } setShowIndex={()=>setShowIndex(index)}/>
+        <RestaurantCategory key={index} cardData={data?.card?.card } showItems={index===showIndex? true:false } setShowIndex={()=>setShowIndex(index)}/>
       ))}
     </div>
   );
